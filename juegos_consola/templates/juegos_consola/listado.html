@@ -1,0 +1,11 @@
+{% load static %}
+
+<h1>Consolas</h1>
+
+<ul>
+    {% for consola in consolas %}
+        <li>{{ consola.name }}</li>
+        <li><img src="{{ consola.console_banner.url }}" alt="{{ consola.name }}" width="250px"></li>
+        <li><img src="{{ consola.console_image.url }}" alt="{{ consola.name }}" width="250px"></li>
+    {% endfor %}
+</ul>
